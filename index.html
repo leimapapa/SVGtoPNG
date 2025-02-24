@@ -355,5 +355,21 @@
 
         document.querySelector("#userSVG").addEventListener("input", appendSVG);
     </script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('leimapapa', {
+		'type': 'floating-chat',
+		'floating-chat.donateButton.text': 'Support me',
+		'floating-chat.donateButton.background-color': 'rgba(255, 255, 255, 0.1)',
+		'floating-chat.donateButton.text-color': '#fff'
+	});
+	</script>
+    <script type="module">
+	  import { createNavbar } from 'https://leimolabs.com/navbar.js';
+	
+	  document.addEventListener('DOMContentLoaded', () => {
+	    createNavbar({ opacity: '0.8' });
+	  });
+    </script>
 </body>
 </html>
